@@ -12,8 +12,7 @@ def form(request):
 
 
 def transaction(request):
-    amount = request.POST.get('number')
-    name = request.POST.get('name')
+    amount = request.POST.get('number')
     date = datetime.now().strftime("%Y-%m-%d")
     current_time_gmt = datetime.utcnow()
     ist_offset = timedelta(hours=5, minutes=30)
